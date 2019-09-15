@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.tesji.envios.controlador.EnviosController">
+   <children>
+      <Separator layoutX="5.0" layoutY="60.0" prefHeight="0.0" prefWidth="591.0" />
+      <Separator layoutX="76.0" layoutY="60.0" orientation="VERTICAL" prefHeight="340.0" prefWidth="0.0" />
+      <Pane layoutY="-1.0" prefHeight="63.0" prefWidth="600.0" styleClass="personalizado" stylesheets="@../stilos/stylejilo.css">
+         <children>
+            <Label layoutX="247.0" layoutY="23.0" prefHeight="20.0" prefWidth="129.0" styleClass="titulo2" stylesheets="@../stilos/stylejilo.css" text="  PAQUETERIA TESJI">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="498.0" layoutY="13.0" prefHeight="20.0" prefWidth="97.0" text="&lt; cotizaciones" textFill="#fbfbfb">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane layoutY="62.0" prefHeight="339.0" prefWidth="78.0" styleClass="colorPanel" stylesheets="@../stilos/stylejilo.css" />
+      <Separator layoutX="142.0" layoutY="177.0" prefHeight="3.0" prefWidth="416.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-2.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/Logo-Replikat-innovacion-imagen-negro-transparente.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="222.0" layoutY="136.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="429.0" layoutY="134.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Label layoutX="170.0" layoutY="150.0" text="Zona" />
+      <Label layoutX="306.0" layoutY="150.0" text="ubicacion" />
+      <Label layoutX="474.0" layoutY="150.0" text="Costo/gramo" />
+      <Label layoutX="130.0" layoutY="191.0" onMouseMoved="#unoMuaseMoved" prefHeight="17.0" prefWidth="78.0" text="            1" />
+      <Label layoutX="129.0" layoutY="215.0" onMouseMoved="#dosMuaseMoved" prefHeight="17.0" prefWidth="82.0" text="            2" />
+      <Label layoutX="125.0" layoutY="241.0" onMouseMoved="#tresMuaseMoved" prefHeight="17.0" prefWidth="82.0" text="             3" />
+      <Label layoutX="119.0" layoutY="264.0" onMouseMoved="#cuatroMuaseMoved" prefHeight="17.0" prefWidth="89.0" text="               4" />
+      <Label layoutX="119.0" layoutY="290.0" onMouseMoved="#cincoMuaseMoved" prefHeight="17.0" prefWidth="97.0" text="               5" />
+      <Label layoutX="313.0" layoutY="285.0" onMouseMoved="#asiaMauseMoved" text="Asia" />
+      <Label fx:id="lbl1" layoutX="437.0" layoutY="190.0" prefHeight="17.0" prefWidth="144.0" />
+      <Label fx:id="lbl2" layoutX="437.0" layoutY="215.0" prefHeight="17.0" prefWidth="152.0" />
+      <Label fx:id="lbl3" layoutX="437.0" layoutY="241.0" prefHeight="17.0" prefWidth="154.0" />
+      <Label fx:id="lbl4" layoutX="437.0" layoutY="264.0" prefHeight="17.0" prefWidth="156.0" />
+      <Label fx:id="lbl5" layoutX="438.0" layoutY="285.0" prefHeight="17.0" prefWidth="154.0" />
+      <JFXTextField fx:id="txtPeso" focusColor="#eb2a40" layoutX="258.0" layoutY="108.0" onKeyTyped="#pesoKeyTyped" />
+      <Label layoutX="277.0" layoutY="76.0" prefHeight="17.0" prefWidth="100.0" text="Peso del Producto" />
+      <Label layoutX="305.0" layoutY="93.0" text="(gramos)">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="394.0" layoutY="347.0" onAction="#btnNuevo" styleClass="colorFondo" stylesheets="@../stilos/stylejilo.css" text="Nuevo" textFill="#fdfcfc" />
+      <JFXButton layoutX="202.0" layoutY="347.0" onAction="#btnSalir" style="-fx-background-color: #ef4646;" text="Salir" />
+      <JFXButton layoutX="271.0" layoutY="187.0" onMouseMoved="#norteMauseMoved" text="America del Norte" />
+      <JFXButton layoutX="267.0" layoutY="211.0" onMouseMoved="#centralMauseMoved" text="America del Central" />
+      <JFXButton layoutX="278.0" layoutY="237.0" onMouseMoved="#surMauseMoved" text="America del Sur" />
+      <JFXButton layoutX="300.0" layoutY="260.0" onMouseMoved="#europaMauseMoved" text="Europa" />
+   </children>
+</AnchorPane>
